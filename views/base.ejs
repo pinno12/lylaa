@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="오키도키">
+  <meta name="author" content="오키도키 승원">
+  <meta name="generator" content="Jekyll v4.1.1">
+  <meta property="og:title" content="옷키도키 무신사인기">
+  <meta property="og:description" content="인기인">
+  <meta property="og:image" content="images/kakao.png">
+  <title>옷덕후</title>
+  <!-- Bootstrap CSS -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+  <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-65945715-4"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'UA-65945715-4');
+  </script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fomantic-ui@2.8.7/dist/semantic.min.css">
+<script src="https://cdn.jsdelivr.net/npm/fomantic-ui@2.8.7/dist/semantic.min.js"></script>
+  <link rel="icon" type="image/png" href="/images/favicon.png" />
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark ui fixed inverted menu" aria-label="Eighth navbar example">
+    <div class="container">
+      <a class="navbar-brand" href="/">💓옷덕후</a>
+      <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample07" aria-controls="navbarsExample07" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="navbar-collapse collapse" id="navbarsExample07" style="">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="dropdown07" data-bs-toggle="dropdown" aria-expanded="false">바지</a>
+            <ul class="dropdown-menu" aria-labelledby="dropdown07">
+
+              <li>  <a class="dropdown-item" href="/003007/<%= months[6] %>">코튼</a></li>
+              <li><a class="dropdown-item" href="/003009/<%= months[6] %>">숏 팬츠</a></li>
+              <li>   <a class="dropdown-item" href="/003004/<%= months[6] %>">트레이닝/조거</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="dropdown07" data-bs-toggle="dropdown" aria-expanded="false">상의</a>
+            <ul class="dropdown-menu" aria-labelledby="dropdown07">
+              <li><a class="dropdown-item" href="/001001/<%= months[6] %>">반팔</a></li>
+              <li><a class="dropdown-item" href="/001010/<%= months[6] %>">긴팔</a></li>
+              <li><a class="dropdown-item" href="/001005/<%= months[6] %>">맨투맨</a></li>
+              <li><a class="dropdown-item" href="/001004/<%= months[6] %>">후드</a></li>
+              <li><a class="dropdown-item" href="/001006/<%= months[6] %>">니트</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="dropdown07" data-bs-toggle="dropdown" aria-expanded="false">아우터</a>
+            <ul class="dropdown-menu" aria-labelledby="dropdown07">
+              <li><a class="dropdown-item" href="/002022/<%= months[6] %>">후드집업</a></li>
+              <li><a class="dropdown-item" href="/002020/<%= months[6] %>">카디건</a></li>
+              <li><a class="dropdown-item" href="/002023/<%= months[6] %>">폴리스/뽀글이</a></li>
+              <li><a class="dropdown-item" href="/002018/<%= months[6] %>">트레이닝 재킷</a></li>
+              <li><a class="dropdown-item" href="/002015/<%= months[6] %>">기타 아우터</a></li>
+            </ul>
+          </li>
+          <nav class="d-inline-flex mt-2 mt-md-0 ms-md-auto">
+            <li class="me-3 py-2 text-white text-decoration-none" >  <%= user.username %>님 하이</li>
+            <a class="me-3 py-2 text-white text-decoration-none" href="/logout">로그아웃</a>
+            <li class="me-3 py-2 text-white text-decoration-none float-right ml-4" id = "currentTime"></li><span></span>
+            <li class="me-3 py-2 text-white text-decoration-none float-right" id = "currentTitle"></li><span></span>
+       
+          </nav>
+        </ul>
+      </div>
+
+    
+
+    </div>
+  </nav>
+  <main class="ui main container" style="margin-top:7rem;">
+   
+    <section id = "months" class = "mb-5 row-cols-12">
+     <a href = "<%= months[0] %>" class="ui secondary button">3월</a>
+     <a href = "<%= months[1] %>" class="ui secondary button">4월</a>
+     <a href = "<%= months[2] %>" class="ui secondary button">5월</a>
+     <a href = "<%= months[3] %>" class="ui secondary button">6월</a>
+     <a href = "<%= months[4] %>" class="ui secondary button">7월</a>
+     <a href = "<%= months[5] %>" class="ui secondary button">8월</a>
+     <a href = "<%= months[6] %>" class="ui secondary button">9월</a>
+
+     <a href = "<%= months[7] %>" class="ui secondary button">10월</a>
+     <a href = "<%= months[8] %>" class="ui secondary button">11월</a>
+     <a href = "<%= months[9] %>" class="ui secondary button">12월</a>
+     <a href = "<%= months[10] %>" class="ui secondary button">2022.1월</a>
+    </section>
+    <section class = "row row-cols-4">
+    <!-- <div class="row-cols-4 flex-row-reverse "> -->
+   
+      <% if (hoodies[0] != null){ %>  
+      <div class="col">
+        <div class="ui fluid card my-height" style="width: 100%;  overflow-y: auto;">
+        <div class="image">
+
+          <a href='<%= hoodies[0].link %>'>
+            <img src="<%= hoodies[0].first_img %>"  width="100%" loading="lazy"></a>
+        </div>
+        <div class="ui fluid card">
+          <div class="image">
+            <table class="ui celled striped table my-height">
+              <thead>
+                <tr>
+                  <th colspan="2">            
+                    <a class = "title" href='<%= hoodies[0].link %>' target = "_blank" alt = '<%= hoodies[0].title %>' >
+                      <%= hoodies[0].title %>
+                     </a>
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="collapsing" style = "width:30%">
+                    가격
+                  </td>
+                  <td>
+                    <%= hoodies[0].price %>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    사이즈
+                  </td>
+                  <td>
+                    <%= hoodies[0].size %>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    판매량
+                  </td>
+                  <td>
+                    <%= hoodies[0].sales_qty %>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <% } else {}%> 
+       
+        
+         <% for(var i=1; i < hoodies.length; i++) { %>        
+                 <% if(hoodies[i].link!=hoodies[i-1].link){ %>
+        
+            </div>
+       
+                  <div class="description">
+                    <a href='<%= hoodies[i].link %>' target = "_blank" class = "text-dark" id = "link-<%= i %>"><%= hoodies[i-1].title %></a> <br />
+                    <%= hoodies[i-1].price %> <br />
+                    사이즈:  <%= hoodies[i-1].size %> <br />
+                    판매량:       <%= hoodies[i-1].sales_qty %>
+                  </div>             
+                  </div>       
+                <div class="col">
+                  <div class="ui fluid card my-height" style="width: 100%;  overflow-y: auto;">
+                  <div class="image">
+                    <a href='<%= hoodies[i].link %>' target = "_blank" class = "showDetails"> 
+                      <img src="<%= hoodies[i].first_img %>" width="100%" loading="lazy">
+                    </a>
+                  </div>
+              <%  } else { %>
+                <div class="image">
+                  <a href="<%= hoodies[i].link %>" target="_blank">
+                    <img src="<%= hoodies[i].detail_img %>"  width="100%" loading="lazy"> </a>
+            </div>
+            <% } %>
+          <% } %>
+
+       
+          </section>
+  </main>
+
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+    crossorigin="anonymous"></script>
+  <script>
+    let title = ['코튼', '숏 팬츠', '트레이닝/조거', '반팔', '긴팔', '맨투맨', '후드 티셔츠', '니트', '후드집업', '카디건', '플리스/뽀글이', '트레이닝 재킷', '기타 아우터' ]
+let serial = ['003007', '003009', '003004', '001001', '001010', '001005',
+'001004',
+'001006',
+'002022',
+'002020',
+'002023',
+'002018',
+'002015']
+ currentMonth = () => {
+
+    let x = window.location.pathname.split("/")
+    // Month
+    let currentPage = x[x.length - 1].toString().substr(2,2)
+    let cloth = x[x.length - 2]
+    let currentTitle = title[serial.indexOf(cloth)]
+    // $("#currentTime").innerText = currentPage
+    document.getElementById("currentTime").innerText = currentPage + ' 월'
+    document.getElementById("currentTitle").innerText = currentTitle
+    
+    console.log(currentPage)
+  }
+
+  currentMonth();
+
+
+
+/*
+{코튼 003007	o003007	003007
+숏 팬츠 short 003009	o003009	003009
+트레이닝/조거 training 003004	o003004	003004
+반팔 short 001001	o001001	001001
+긴팔 long 001010	o001010	001010
+맨투맨 mtm 001005	o001005	001005
+후드 티셔츠ㅜ hoodie 001004	o001004	001004
+니트 knit 001006	o001006	001006
+후드집업 hoodie_zipup 002022	o002022	002022
+카디건 cardigan 002020	o002020	002020
+플리스/뽀글이 Fleece 002023	o002023	002023
+트레이닝 재킷 training 002018	o002018	002018
+기타 아우터 etc 002015	o002015	002015
+*/
+  </script>
+
+</body>
+</html>
