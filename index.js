@@ -1,8 +1,5 @@
 const express = require("express");
 const path = require("path");
-const sqlite3 = require("sqlite3").verbose();
-// const mysql      = require('mysql2');
-
 const db = require('./.data/otuku')
 var passport = require('passport');
 var Strategy = require('passport-local').Strategy;
